@@ -1,0 +1,183 @@
+.maincolumn {
+    text-align: center;
+    & .heading {
+        font-size: 40px;
+        font-weight: 400;
+        color: #494949;
+        line-height: 60px;
+        margin-bottom: 5px;
+    }
+    .subHeading {
+        font-size: 10px;
+        font-weight: 600;
+        color: #494949;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 45px;
+            border: 1.3px solid $theme2;
+            border-radius: 11px;
+            right: 39%;
+            top: 45%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 45px;
+            border: 1.3px solid $theme2;
+            border-radius: 11px;
+            top: 45%;
+            left: 39%;
+        }
+        & span{
+            
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 575.99px) {
+    .maincolumn {
+        text-align: center;
+        & .heading {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .subHeading {
+            width: 60%;
+            margin: auto;
+            font-size: 10px;
+            &::after {
+                content: "";
+                left: 12%;
+                width: 40px;
+            }
+            &::before {
+                width: 40px;
+                left: 75%;
+            }
+            & span{
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767.99px){
+    .maincolumn {
+        text-align: center;
+        & .heading {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .subHeading {
+            width: 60%;
+            margin: auto;
+            font-size: 10px;
+            &::after {
+                content: "";
+                left: 12%;
+                width: 40px;
+            }
+            &::before {
+                width: 40px;
+                left: 75%;
+            }
+            & span{
+                
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 991.99px){
+    .maincolumn {
+        text-align: center;
+        & .heading {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .subHeading {
+            width: 50%;
+            margin: auto;
+            font-size: 10px;
+            &::after {
+                content: "";
+                left: 12%;
+                width: 40px;
+            }
+            &::before {
+                width: 40px;
+                left: 75%;
+            }
+            & span{
+                
+            }
+        }
+    }
+}
+@media (min-width: 993px) and (max-width: 1025.99px){
+    .maincolumn {
+        text-align: center;
+        & .heading {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .subHeading {
+            width: 35%;
+            margin: auto;
+            font-size: 10px;
+            &::after {
+                content: "";
+                left: 12%;
+                width: 40px;
+            }
+            &::before {
+                width: 40px;
+                left: 75%;
+            }
+            & span{
+                
+            }
+        }
+    }
+}
+@media (min-width: 1027px) and (max-width: .1281px){
+    .maincolumn {
+        text-align: center;
+        & .heading {
+            font-size: 40px;
+            font-weight: 400;
+            color: #494949;
+            line-height: 60px;
+            margin-bottom: 5px;
+        }
+        .subHeading {
+            font-size: 10px;
+            font-weight: 600;
+            color: #494949;
+            text-transform: uppercase;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 45px;
+                border: 1.3px solid $theme2;
+                border-radius: 11px;
+                right: 39%;
+                top: 45%;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 45px;
+                border: 1.3px solid $theme2;
+                border-radius: 11px;
+                top: 45%;
+                left: 39%;
+            }
+            & span{
+                
+            }
+        }
+    }
+}

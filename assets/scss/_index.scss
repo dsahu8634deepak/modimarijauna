@@ -1,0 +1,1704 @@
+@charset "UTF-8";
+@import "variables";
+//------------------------------------------HomePage-------------------------------------------------------
+.heroSection {
+    position: relative;
+    background-image: url(../image/home/hero-banner-bg.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 50px;
+    background-position: center center;
+    & .container {
+        height: 100%;
+        & .row {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    & .heading {
+        font-size: 51px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 30px;
+    }
+    & .perograpg {
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 82px;
+        letter-spacing: 2px;
+    }
+    & .buttonHero {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        border: 2px solid #fff;
+        background: transparent;
+        padding: 10px 32px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    & .contentside {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    & .sidelist {
+        position: absolute;
+        background: #fff;
+        top: 50%;
+        left: -15px;
+        padding: 10px 25px;
+        border-radius: 7px;
+        display: flex;
+        align-items: start;
+        gap: 6px;
+        flex-direction: column;
+        font-size: 13px;
+        color: #555555;
+        & li:first-child {
+            color: $theme1;
+        }
+    }
+}
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.visible {
+    display: block;
+    opacity: 1;
+}
+//------------------------------------------we Are Orgnic farmfood-------------------------------------------------------
+.we_are_organic_Section {
+    margin-bottom: 50px;
+    background-image: url(../image/home/we-are-organic-bg.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    & .container {
+        & .maincolumn {
+            padding-bottom: 30px;
+        }
+        & .card {
+            text-align: center;
+            & .card-image {
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                & img {
+                }
+            }
+            & .card-body {
+                flex: 1 1 auto;
+                padding: 16px;
+
+                & .card-heading {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #727272;
+                    padding: 6px 0px;
+                }
+                & .card-perograph {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #727272;
+                    padding: 6px 0px;
+                }
+                & .card-button {
+                    position: relative;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 10px 25px;
+                    background: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #727272;
+                    margin: 10px 0px;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        bottom: -2px;
+                        left: -2px;
+                        right: -2px;
+                        background: linear-gradient(to right, $theme1, $theme2);
+                        z-index: -1;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//----------------------------------------- Orgnic Good-------------------------------------------------------
+
+.organicGoods_Section {
+    margin-bottom: 50px;
+    background-color: #f9f8f4;
+    & .container {
+        & .row {
+            & .maincolumn {
+                & .centerImage {
+                    height: 90px;
+                    width: 100px;
+                    margin: auto;
+                    margin-top: 10px;
+                }
+            }
+            & .owl-carousel {
+                margin-top: 10px;
+                & .owl-stage-outer {
+                    & .item {
+                        padding: 10px;
+                        background-color: transparent;
+                        & .card {
+                            background-color: white;
+                            text-align: center;
+                            border-radius: 15px;
+                            height: 100%;
+                            box-shadow: 0px 0px 11px 0px rgba(58, 181, 74, 0.23) !important;
+                            & .card-body {
+                                padding: 1rem;
+                                & .offer {
+                                    text-align: end;
+                                    width: 30px;
+                                    height: 30px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-left: auto;
+                                    border-radius: 50%;
+                                    background: $theme1;
+                                    color: $white;
+                                    font-size: 10px;
+                                    font-weight: 600;
+                                    padding: 2px;
+                                }
+                                & .card-image {
+                                    width: 150px;
+                                    height: 100px;
+                                    margin: 25px auto;
+                                }
+                                & .cardItemname {
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    color: #4f4f4f;
+                                    padding: 10px;
+                                }
+                                & .itemPayment {
+                                    color: #ed1c25;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                }
+                                & .add_card_button {
+                                    width: 70%;
+                                    margin: 10px auto;
+                                    position: relative;
+                                    border: none;
+                                    border-radius: 30px;
+                                    padding: 7px 20px;
+                                    background: #fff;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: #727272;
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: -2.5px;
+                                        bottom: -2.5px;
+                                        left: -2.5px;
+                                        right: -2.5px;
+                                        background: linear-gradient(to right, $theme1, $theme2);
+                                        z-index: -1;
+                                        border-radius: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .owl-nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 50%;
+                    bottom: 50%;
+                    left: -60px;
+                    right: -60px;
+                    & .owl-prev {
+                        width: 50px;
+                        background: white;
+                        height: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        box-shadow: 0px 0px 10px #3ab54a47;
+
+                        &::before {
+                            background-image: url(../image/icon/angle-left.svg);
+                            content: "";
+                            width: 50%;
+                            height: 50%;
+                            position: absolute;
+                            inset: 0;
+                            margin: auto;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        & span {
+                            display: none;
+                        }
+                    }
+                    & .owl-next {
+                        width: 50px;
+                        background: white;
+                        height: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        box-shadow: 0px 0px 10px #3ab54a47;
+                        &::before {
+                            background-image: url(../image/icon/angle-right.svg);
+                            content: "";
+                            width: 50%;
+                            height: 50%;
+                            position: absolute;
+                            inset: 0;
+                            margin: auto;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        & span {
+                            display: none;
+                        }
+                    }
+                }
+                & .owl-dots {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    & .owl-dot {
+                        width: 40px;
+                        height: 10px;
+                        border-radius: 10px;
+                        background-color: #e6e6e6;
+                        &.active {
+                            background-color: $theme1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//----------------------------------------- we Are Orgnic farmfood-------------------------------------------------------
+.organic_framfood_Section {
+    margin-bottom: 50px;
+    & .container {
+        & .row {
+            & .leftSidepart {
+                & .row {
+                    margin-bottom: 20px;
+                    & .hedaingcard {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #000;
+                        text-align: end;
+                        position: relative;
+                        margin-bottom: 11px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 44px;
+                            border: 1px solid #8080808f;
+                            bottom: -7px;
+                            right: 3px;
+                            border-radius: 10px;
+                        }
+                    }
+                    & .cardtext {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #727272;
+                        text-align: end;
+                    }
+                    & .image {
+                        width: 90px;
+                        height: 90px;
+                        & img {
+                        }
+                    }
+                }
+            }
+            & .middleSide {
+                & .row {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    height: 100%;
+                    & .orgnicimage {
+                        & img {
+                        }
+                    }
+                    & .orgniccenterimage {
+                        & img {
+                        }
+                    }
+                }
+            }
+            & .rightSide {
+                & .row {
+                    margin-bottom: 20px;
+                    & .hedaingcard {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #000;
+                        text-align: start;
+                        position: relative;
+                        margin-bottom: 11px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 44px;
+                            border: 1px solid #8080808f;
+                            bottom: -7px;
+                            left: 3px;
+                            border-radius: 10px;
+                        }
+                    }
+                    & .cardtext {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #727272;
+                        text-align: start;
+                    }
+                    & .image {
+                        width: 90px;
+                        height: 90px;
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// -----------------------------------------Subscribe news letter completed------------------------------------
+.subscribeSection {
+    background-image: url(../image/home/newslatter-bg.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    box-shadow: 0px 0px 28px 0px #b8b5b5;
+    height: 36vh;
+    & .container {
+        & .row {
+            padding: 80px;
+            & .subscribeheading {
+                font-size: 12px;
+                font-weight: 600;
+                color: #555555;
+                padding-left: 20px;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+            }
+            & .newsHeading {
+                font-size: 20px;
+                font-weight: 600;
+                color: #494949;
+                text-transform: capitalize;
+                padding-left: 20px;
+            }
+            & .buttoninputgroup {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 20px;
+                & .input {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 30px;
+                    box-shadow: 0px 1px 8px #8f8f8fd9;
+                    border: 0px solid rgba(128, 128, 128, 0.5294117647);
+                    padding-left: 13px;
+                    color: #d3d3d3;
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+                & .subscribebtn {
+                    margin: 0px auto;
+                    position: relative;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 5px 11px;
+                    background: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #727272;
+                    width: 25%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -2.5px;
+                        bottom: -2.5px;
+                        left: -2.5px;
+                        right: -2.5px;
+                        background: linear-gradient(to right, $theme1, $theme2);
+                        z-index: -1;
+                        border-radius: 50px;
+                    }
+                    & span {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575.99px) {
+    // --------------------------------------home uncompleted----------------------------------------------
+    .heroSection {
+        background-image: url(../image/home/hero-banner-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin-bottom: 50px;
+        background-position: center center;
+        & .container {
+            height: 100%;
+            & .row {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        & .heading {
+            font-size: 40px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 50px;
+        }
+        & .perograpg {
+            font-size: 21px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 27px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        & .buttonHero {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            border: 2px solid #fff;
+            background: transparent;
+            padding: 10px 32px;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+    }
+    //------------------------------------------we Are Orgnic farmfood completed---------------------------
+    .we_are_organic_Section {
+        & .container {
+            & .maincolumn {
+                padding-bottom: 30px;
+            }
+            & .card {
+                text-align: center;
+                & .card-image {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+                & .card-body {
+                    flex: 1 1 auto;
+                    padding: 16px;
+
+                    & .card-heading {
+                        font-size: 16px;
+                    }
+                    & .card-perograph {
+                    }
+                    & .card-button {
+                        padding: 9px 20px;
+                        font-size: 11px;
+                        margin: 7px 0px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                            background: linear-gradient(to right, $theme1, $theme2);
+                            z-index: -1;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------------------------- Orgnic Good completed--------------------------------------
+    .organicGoods_Section {
+        margin-bottom: 50px;
+        background-color: #f9f8f4;
+        & .container {
+            & .row {
+                & .maincolumn {
+                    & .centerImage {
+                        width: 100px;
+                        height: 100px;
+                        margin: auto;
+                    }
+                }
+                & .owl-carousel {
+                    & .owl-stage-outer {
+                        margin: 30px 0px;
+                        & .item {
+                            & .card {
+                                & .card-body {
+                                    padding: 1rem;
+                                    & .offer {
+                                    }
+                                    & .card-image {
+                                    }
+                                    & .cardItemname {
+                                    }
+                                    & .itemPayment {
+                                    }
+                                    & .add_card_button {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .owl-nav {
+                        left: -4px;
+                        right: -4px;
+                        & .owl-prev {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                        & .owl-next {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        display: none;
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------------------------- we Are Orgnic farmfood completed---------------------------
+    .organic_framfood_Section {
+        margin-bottom: 50px;
+        & .container {
+            & .row {
+                & .leftSidepart {
+                    & .bigcard {
+                        order: 2;
+                    }
+                    & .smallcard {
+                        order: 1;
+                    }
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 14px;
+                            text-align: center;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                right: 43%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #727272;
+                            text-align: center;
+                        }
+                        & .image {
+                            width: 90px;
+                            height: 90px;
+                            margin: auto;
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .middleSide {
+                    & .row {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        height: 100%;
+                        & .orgnicimage {
+                            & img {
+                            }
+                        }
+                        & .orgniccenterimage {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 14px;
+                            text-align: center;
+                            &::after {
+                                content: "";
+                                left: 43%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                        & .image {
+                            width: 90px;
+                            height: 90px;
+                            margin: auto;
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------------------------Subscribe news letter completed----------------------------
+    .subscribeSection {
+        background-image: none;
+        & .container {
+            & .row {
+                padding: 10px;
+                & .subscribeheading {
+                    font-size: 12px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .newsHeading {
+                    font-size: 20px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .buttoninputgroup {
+                    margin-top: 10px;
+                    flex-direction: column;
+                    & .input {
+                        &:focus-visible {
+                        }
+                    }
+                    & .subscribebtn {
+                        width: auto;
+                        font-size: 12px;
+                        &::after {
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                        }
+                        & span {
+                            margin-left: 5px;
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 577px) and (max-width: 767.99px) {
+    // --------------------------------------home uncompleted----------------------------------------------
+    .heroSection {
+        background-image: url(../image/home/hero-banner-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin-bottom: 50px;
+        background-position: center center;
+        & .container {
+            height: 100%;
+            & .row {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        & .heading {
+            font-size: 40px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 50px;
+        }
+        & .perograpg {
+            font-size: 21px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 27px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        & .buttonHero {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            border: 2px solid #fff;
+            background: transparent;
+            padding: 10px 32px;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+    }
+    //------------------------------------------we Are Orgnic farmfood completed---------------------------
+    .we_are_organic_Section {
+        & .container {
+            & .maincolumn {
+                padding-bottom: 30px;
+            }
+            & .card {
+                text-align: center;
+                & .card-image {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+                & .card-body {
+                    flex: 1 1 auto;
+                    padding: 16px;
+
+                    & .card-heading {
+                        font-size: 16px;
+                    }
+                    & .card-perograph {
+                    }
+                    & .card-button {
+                        padding: 9px 20px;
+                        font-size: 11px;
+                        margin: 7px 0px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                            background: linear-gradient(to right, $theme1, $theme2);
+                            z-index: -1;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------------------------- Orgnic Good completed--------------------------------------
+    .organicGoods_Section {
+        margin-bottom: 50px;
+        background-color: #f9f8f4;
+        & .container {
+            & .row {
+                & .maincolumn {
+                    & .centerImage {
+                        width: 100px;
+                        height: 100px;
+                        margin: auto;
+                    }
+                }
+                & .owl-carousel {
+                    & .owl-stage-outer {
+                        margin: 30px 0px;
+                        & .item {
+                            & .card {
+                                & .card-body {
+                                    padding: 1rem;
+                                    & .offer {
+                                    }
+                                    & .card-image {
+                                    }
+                                    & .cardItemname {
+                                    }
+                                    & .itemPayment {
+                                    }
+                                    & .add_card_button {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .owl-nav {
+                        left: -4px;
+                        right: -4px;
+                        & .owl-prev {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                        & .owl-next {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        display: none;
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------------------------- we Are Orgnic farmfood completed---------------------------
+    .organic_framfood_Section {
+        margin-bottom: 50px;
+        & .container {
+            & .row {
+                & .leftSidepart {
+                    & .bigcard {
+                        order: 2;
+                    }
+                    & .smallcard {
+                        order: 1;
+                    }
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 14px;
+                            text-align: center;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                right: 43%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #727272;
+                            text-align: center;
+                        }
+                        & .image {
+                            width: 90px;
+                            height: 90px;
+                            margin: auto;
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .middleSide {
+                    & .row {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        height: 100%;
+                        & .orgnicimage {
+                            & img {
+                            }
+                        }
+                        & .orgniccenterimage {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 14px;
+                            text-align: center;
+                            &::after {
+                                content: "";
+                                left: 43%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                        & .image {
+                            width: 90px;
+                            height: 90px;
+                            margin: auto;
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------------------------Subscribe news letter completed----------------------------
+    .subscribeSection {
+        background-image: none;
+        & .container {
+            & .row {
+                padding: 10px;
+                & .subscribeheading {
+                    font-size: 12px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .newsHeading {
+                    font-size: 20px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .buttoninputgroup {
+                    margin-top: 10px;
+                    flex-direction: column;
+                    & .input {
+                        &:focus-visible {
+                        }
+                    }
+                    & .subscribebtn {
+                        width: auto;
+                        font-size: 12px;
+                        &::after {
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                        }
+                        & span {
+                            margin-left: 5px;
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 991.99px) {
+    // --------------------------------------home uncompleted----------------------------------------------
+    .heroSection {
+        background-image: url(../image/home/hero-banner-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin-bottom: 50px;
+        background-position: center center;
+        & .container {
+            height: 100%;
+            & .row {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        & .heading {
+            font-size: 40px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 50px;
+        }
+        & .perograpg {
+            font-size: 21px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 27px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        & .buttonHero {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            border: 2px solid #fff;
+            background: transparent;
+            padding: 10px 32px;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+    }
+    //------------------------------------------we Are Orgnic farmfood-------------------------------------
+    .we_are_organic_Section {
+        & .container {
+            & .maincolumn {
+                padding-bottom: 30px;
+            }
+            & .card {
+                text-align: center;
+                & .card-image {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+                & .card-body {
+                    flex: 1 1 auto;
+                    padding: 16px;
+
+                    & .card-heading {
+                        font-size: 16px;
+                    }
+                    & .card-perograph {
+                    }
+                    & .card-button {
+                        padding: 9px 20px;
+                        font-size: 11px;
+                        margin: 7px 0px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                            background: linear-gradient(to right, $theme1, $theme2);
+                            z-index: -1;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------------------------- Orgnic Good completed--------------------------------------
+    .organicGoods_Section {
+        margin-bottom: 50px;
+        background-color: #f9f8f4;
+        & .container {
+            & .row {
+                & .maincolumn {
+                    & .centerImage {
+                        width: 100px;
+                        height: 100px;
+                        margin: auto;
+                    }
+                }
+                & .owl-carousel {
+                    & .owl-stage-outer {
+                        margin: 30px 0px;
+                        & .item {
+                            & .card {
+                                & .card-body {
+                                    padding: 1rem;
+                                    & .offer {
+                                    }
+                                    & .card-image {
+                                    }
+                                    & .cardItemname {
+                                    }
+                                    & .itemPayment {
+                                    }
+                                    & .add_card_button {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .owl-nav {
+                        left: -4px;
+                        right: -4px;
+                        & .owl-prev {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                        & .owl-next {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        display: none;
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------------------------- we Are Orgnic farmfood fcompleted---------------------------
+    .organic_framfood_Section {
+        margin-bottom: 50px;
+        & .container {
+            & .row {
+                & .leftSidepart {
+                    & .bigcard {
+                        order: unset;
+                    }
+                    & .smallcard {
+                        order: unset;
+                    }
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 13px;
+                            text-align: end;
+                            &::after {
+                                right: 0%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 12px;
+                            text-align: end;
+                        }
+                        & .image {
+                            width: 70px;
+                            height: 70px;
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .middleSide {
+                    & .row {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        height: 100%;
+                        & .orgnicimage {
+                            & img {
+                            }
+                        }
+                        & .orgniccenterimage {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 13px;
+                            text-align: left;
+                            padding-left: 20px;
+                            &::after {
+                                content: "";
+                                left: 10%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 12px;
+                            text-align: left;
+                            padding-left: 20px;
+                        }
+                        & .image {
+                            width: 70px;
+                            height: 70px;
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------------------------Subscribe news letter fcompleted----------------------------
+    .subscribeSection {
+        background-image: none;
+        & .container {
+            & .row {
+                padding: 10px;
+                & .subscribeheading {
+                    font-size: 12px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .newsHeading {
+                    font-size: 20px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .buttoninputgroup {
+                    margin-top: 10px;
+                    flex-direction: column;
+                    & .input {
+                        &:focus-visible {
+                        }
+                    }
+                    & .subscribebtn {
+                        width: auto;
+                        font-size: 12px;
+                        &::after {
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                        }
+                        & span {
+                            margin-left: 5px;
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1025.99px) {
+    //------------------------------------------we Are Orgnic farmfood-------------------------------------
+    .we_are_organic_Section {
+        & .container {
+            & .maincolumn {
+                padding-bottom: 30px;
+            }
+            & .card {
+                text-align: center;
+                & .card-image {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+                & .card-body {
+                    flex: 1 1 auto;
+                    padding: 16px;
+
+                    & .card-heading {
+                        font-size: 16px;
+                    }
+                    & .card-perograph {
+                    }
+                    & .card-button {
+                        padding: 9px 20px;
+                        font-size: 11px;
+                        margin: 7px 0px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                            background: linear-gradient(to right, $theme1, $theme2);
+                            z-index: -1;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //----------------------------------------- Orgnic Good fcompleted--------------------------------------
+    .organicGoods_Section {
+        margin-bottom: 50px;
+        background-color: #f9f8f4;
+        & .container {
+            & .row {
+                & .maincolumn {
+                    & .centerImage {
+                        width: 100px;
+                        height: 100px;
+                        margin: auto;
+                    }
+                }
+                & .owl-carousel {
+                    & .owl-stage-outer {
+                        margin: 30px 0px;
+                        & .item {
+                            & .card {
+                                & .card-body {
+                                    padding: 1rem;
+                                    & .offer {
+                                    }
+                                    & .card-image {
+                                    }
+                                    & .cardItemname {
+                                    }
+                                    & .itemPayment {
+                                    }
+                                    & .add_card_button {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .owl-nav {
+                        left: -4px;
+                        right: -4px;
+                        & .owl-prev {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                        & .owl-next {
+                            width: 30px;
+                            height: 30px;
+                            &::before {
+                            }
+                            & span {
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        display: none;
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //----------------------------------------- we Are Orgnic farmfood fcompleted---------------------------
+    .organic_framfood_Section {
+        margin-bottom: 50px;
+        & .container {
+            & .row {
+                & .leftSidepart {
+                    & .bigcard {
+                        order: unset;
+                    }
+                    & .smallcard {
+                        order: unset;
+                    }
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 13px;
+                            text-align: end;
+                            &::after {
+                                right: 0%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 12px;
+                            text-align: end;
+                        }
+                        & .image {
+                            width: 70px;
+                            height: 70px;
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .middleSide {
+                    & .row {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        height: 100%;
+                        & .orgnicimage {
+                            & img {
+                            }
+                        }
+                        & .orgniccenterimage {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 13px;
+                            text-align: left;
+                            padding-left: 20px;
+                            &::after {
+                                content: "";
+                                left: 10%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 12px;
+                            text-align: left;
+                            padding-left: 20px;
+                        }
+                        & .image {
+                            width: 70px;
+                            height: 70px;
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------------------------Subscribe news letter fcompleted----------------------------
+    .subscribeSection {
+        background-image: none;
+        & .container {
+            & .row {
+                padding: 10px;
+                & .subscribeheading {
+                    font-size: 12px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .newsHeading {
+                    font-size: 20px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .column1 {
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                & .column2 {
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                & .buttoninputgroup {
+                    width: 100%;
+                    margin-top: 10px;
+                    flex-direction: unset;
+                    & .input {
+                        &:focus-visible {
+                        }
+                    }
+                    & .subscribebtn {
+                        width: auto;
+                        font-size: 12px;
+                        &::after {
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                        }
+                        & span {
+                            margin-left: 5px;
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1027px) and (max-width: 1281px) {
+    //----------------------------------------- we Are Orgnic farmfood fcompleted---------------------------
+    .organic_framfood_Section {
+        margin-bottom: 50px;
+        & .container {
+            & .row {
+                & .leftSidepart {
+                    & .bigcard {
+                        order: unset;
+                    }
+                    & .smallcard {
+                        order: unset;
+                    }
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 13px;
+                            text-align: end;
+                            &::after {
+                                right: 0%;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 12px;
+                            text-align: end;
+                        }
+                        & .image {
+                            width: 70px;
+                            height: 70px;
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .middleSide {
+                    & .row {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        height: 100%;
+                        & .orgnicimage {
+                            & img {
+                            }
+                        }
+                        & .orgniccenterimage {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .row {
+                        margin-bottom: 20px;
+                        & .hedaingcard {
+                            font-size: 13px;
+                            text-align: left;
+                            &::after {
+                                content: "";
+                                left: 0;
+                            }
+                        }
+                        & .cardtext {
+                            font-size: 12px;
+                            text-align: left;
+                        }
+                        & .image {
+                            width: 70px;
+                            height: 70px;
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------------------------Subscribe news letter fcompleted----------------------------
+    .subscribeSection {
+        background-image: none;
+        & .container {
+            & .row {
+                padding: 10px;
+                & .subscribeheading {
+                    font-size: 12px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .newsHeading {
+                    font-size: 20px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                & .column1 {
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                & .column2 {
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                & .buttoninputgroup {
+                    width: 100%;
+                    margin-top: 10px;
+                    flex-direction: unset;
+                    & .input {
+                        &:focus-visible {
+                        }
+                    }
+                    & .subscribebtn {
+                        width: auto;
+                        font-size: 12px;
+                        &::after {
+                            top: -2px;
+                            bottom: -2px;
+                            left: -2px;
+                            right: -2px;
+                        }
+                        & span {
+                            margin-left: 5px;
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
